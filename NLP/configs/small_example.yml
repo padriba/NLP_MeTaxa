@@ -1,0 +1,4 @@
+inputs: inputs/nseq/*
+debug: true
+k-low: 3
+k-high: 5
