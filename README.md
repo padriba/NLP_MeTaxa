@@ -10,3 +10,8 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
       git clone https://github.com/padriba/NLP_MeTaxa.git
       ```
      * Installation has been tested in Linux based system with Python 3.6.7.
+  
+  - Training NLP embedding model
+  - Training CNN model
+  - Overall mertics
+  - Metrics by rank
