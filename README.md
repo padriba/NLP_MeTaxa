@@ -5,7 +5,8 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
 # Evaluation
   - Installation
   
-     Download NLP_MeTaxa by 
+     * Download NLP_MeTaxa by 
     ```sh
       git clone https://github.com/padriba/NLP_MeTaxa.git
       ```
+     * Installation has been tested in Linux based system with Python 3.6.7.
