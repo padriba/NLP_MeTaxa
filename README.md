@@ -3,4 +3,8 @@ NLP-MeTaxa is a convolutional neural network (CNN) classifier for taxonomic assi
 The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge, where the complexity is gradually ascendant among them, from the low until the high complexity dataset.
 
 # Evaluation
-bla blal blal
+- installation
+Download NLP_MeTaxa by 
+```sh
+  git clone https://github.com/duolinwang/MusiteDeep
+  ```
