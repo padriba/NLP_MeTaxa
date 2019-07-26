@@ -11,7 +11,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
       ```
      * Installation has been tested in Linux based system with Python 3.6.7.
   
-  - Vectorization
+  - NLP Vectorization
   - Training CNN model
   - Overall mertics
   - Metrics by rank
