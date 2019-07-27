@@ -43,5 +43,14 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
           python ./CNN/high_cnnKeras.py
         ```
         Models and weights are saved as .json files and .h5 respectively
+        
+   - To launch a crossvalidation for the three datasets
+   
+       ```sh
+          python ./CNN/low_crossvalidation.py
+          python ./CNN/medium_crossvalidation.py
+          python ./CNN/high_crossvalidation.py
+        ```
+   
   ## Overall mertics
   ## Metrics by rank
