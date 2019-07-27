@@ -34,7 +34,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
      The result will be found in ./NLP/vectorisation_results/high/
      
   ## Training CNN model
-   - Data generated from the previous step is used to train the CNN mlodel
+   - Data generated from the previous step are used to train the CNN mlodel
    - To train the CNN model for the three datasets
     
        ```sh
