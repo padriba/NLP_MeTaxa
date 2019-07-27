@@ -62,7 +62,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
         ```
        A file named cnn_prediction.txt will be found in ./CNN/Metrics_By_Rank/results/
        
-    * then we creat a refrecence file from CAMI dataset across its three different level
+    * then we creat a refrecence file from the CAMI dataset across thethree different level
     
         ```sh
           python ./CNN/Metrics_By_Rank/low_creat_ref.py
