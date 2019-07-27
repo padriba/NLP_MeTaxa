@@ -18,15 +18,15 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
         python ./NLP/vectorisation_low.py
       ```
      The result will be found in ./NLP/vectorisation_results/low/
-     
-     - For the medium comlexity datset:
+    
+   - For the medium comlexity datset:
    
       ```sh
         python ./NLP/vectorisation_medium.py
       ```
      The result will be found in ./NLP/vectorisation_results/medium/
      
-     - For the high comlexity datset:
+   - For the high comlexity datset:
    
       ```sh
         python ./NLP/vectorisation_high.py
