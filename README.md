@@ -43,7 +43,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
           python ./CNN/high_cnnKeras.py
         ```
         Models and weights are saved as .json files and .h5 respectively
-        
+  ## Overall mertics      
    - To launch a crossvalidation for the three datasets
    
        ```sh
@@ -51,6 +51,32 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
           python ./CNN/medium_crossvalidation.py
           python ./CNN/high_crossvalidation.py
         ```
-   
-  ## Overall mertics
   ## Metrics by rank
+  
+  - To asses NLP-MeTaxa performance across the different NCBI taxonomic ranks 
+    *  First we need to creat a prediction file for the three datasets:
+       ```sh
+          python ./CNN/Metrics_By_Rank/low_creat_predection.py
+          python ./CNN/Metrics_By_Rank/medium_creat_predection.py
+          python ./CNN/Metrics_By_Rank/high_creat_predection.py
+        ```
+       A file named cnn_prediction.txt will be found in ./CNN/Metrics_By_Rank/results/
+       
+    * then we creat a refrecence file from CAMI dataset across its three different level
+    
+        ```sh
+          python ./CNN/Metrics_By_Rank/low_creat_ref.py
+          python ./CNN/Metrics_By_Rank/medium_creat_ref.py
+          python ./CNN/Metrics_By_Rank/high_creat_ref.py
+        ```
+        
+        A file named reference.txt will be found in ./CNN/Metrics_By_Rank/results/
+        
+     * Finally, launch the mertric for the three datasets
+     
+        ```sh
+          python ./CNN/Metrics_By_Rank/low_metrics.py
+          python ./CNN/Metrics_By_Rank/medium_metrics.py
+          python ./CNN/Metrics_By_Rank/high_metrics.py
+        ```
+     
