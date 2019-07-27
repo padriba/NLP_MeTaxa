@@ -12,28 +12,36 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
   
   ## NLP Vectorization
   To get a word2vec embedding representation for the metagenomic sample:
-   - For the low comlexity datset:
+   - For the low comlexity dataset:
    
       ```sh
         python ./NLP/vectorisation_low.py
       ```
      The result will be found in ./NLP/vectorisation_results/low/
     
-   - For the medium comlexity datset:
+   - For the medium comlexity dataset:
    
       ```sh
         python ./NLP/vectorisation_medium.py
       ```
      The result will be found in ./NLP/vectorisation_results/medium/
      
-   - For the high comlexity datset:
+   - For the high comlexity dataset:
    
       ```sh
         python ./NLP/vectorisation_high.py
       ```
      The result will be found in ./NLP/vectorisation_results/high/
      
-     
   ## Training CNN model
+   - Data generated from the previous step is used to train the CNN mlodel
+   - To train the CNN model for the three datasets
+    
+       ```sh
+          python ./CNN/low_cnnKeras.py
+          python ./CNN/medium_cnnKeras.py
+          python ./CNN/high_cnnKeras.py
+        ```
+        Models and weights are saved as .json files and .h5 respectively
   ## Overall mertics
   ## Metrics by rank
