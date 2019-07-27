@@ -11,11 +11,13 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
    - Installation has been tested in Linux based system with Python 3.6.7.
   
   ## NLP Vectorization
-  To get a word2vec representation for the metagenomic sample:
-    - For the low comlexity datset:
-     ```sh
-      python ./NLP/vectorisation_low.py
-     ```
+  To get a word2vec embedding representation for the metagenomic sample:
+   - For the low comlexity datset:
+   
+      ```sh
+        python ./NLP/vectorisation_low.py
+      ```
+     The result will be found in ./NLP/
   ## Training CNN model
   ## Overall mertics
   ## Metrics by rank
