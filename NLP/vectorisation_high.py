@@ -13,7 +13,7 @@ def Save_Csv_File(vector,tax_id):
 
 def get_Taxonomy_ID(se_record_id):
    
-     with open('../Dataset/NLP_DataSet/low/gsa_mapping.csv','r') as f:
+     with open('../Dataset/NLP_DataSet/high/gsa_mapping_pool.csv','r') as f:
           for line in f:
               #print (line)
               if se_record_id in line.split(','):
@@ -24,7 +24,7 @@ def get_Taxonomy_ID(se_record_id):
     
 
     
-folder = '../Dataset/NLP_DataSet/nseq_low'
+folder = '../Dataset/NLP_DataSet/nseq_high'
 filepath = 'dna2vec-1-8_high.w2v'
 
 
