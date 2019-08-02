@@ -5,7 +5,7 @@ from dna2vec.multi_k_model import MultiKModel
 from Bio import SeqIO
 
 def Save_Csv_File(vector,tax_id):
-    fileoutput = open('vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv','a+')
+    fileoutput = open(outputfile,'a+')
        #print(vector)
     resutl = ','.join(str(e) for e in vector)
     fileoutput.write(tax_id+','+resutl)
@@ -26,9 +26,11 @@ def get_Taxonomy_ID(se_record_id):
     
 folder = '../Dataset/NLP_DataSet/nseq_high'
 filepath = 'dna2vec-1-8_high.w2v'
+outputfile = 'vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv'
 
-
-
+#delete the output files if they exist
+if os.path.exists(outputfile):
+    os.remove(outputfile)
 
 
 mk_model = MultiKModel(filepath)
