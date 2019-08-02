@@ -4,7 +4,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
 
 # Evaluation
   ## Installation
-  - Because of the existence of large files stored using Git Large File Storage (GLFS), we need first to install LFS package       before cloning the project. For example for Linux based system :
+  - Because of the existence of large files stored using Git Large File Storage (GLFS), you need first to install LFS package       before cloning the project. For example for Linux based system :
     ```sh
       sudo apt-get install git-lfs
       git lfs install
