@@ -86,4 +86,3 @@ neural_network = KerasClassifier(build_fn=create_model,
                                  verbose=0)
 scores = cross_val_score(neural_network, X, y, cv=5)
 print(scores)
-print(scores.explained_variance_score())
