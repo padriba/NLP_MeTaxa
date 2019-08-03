@@ -4,6 +4,7 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import accuracy_score
 import ast
 import statistics 
+import sys
 
 y_true = []
 y_pred = []
@@ -21,7 +22,7 @@ with open('results/low/reference.txt','r') as f:
            # print(vect[i].strip())
             dictionary = ast.literal_eval(vect[i].strip())
             for key, value in dictionary.items():
-               if(value == 'superkingdom'):
+               if(value == sys.argv[1]):
                    y_true.append(key)
                    found = True
         if(not found):
@@ -41,16 +42,17 @@ with open('results/low/cnn_prediction.txt','r') as f:
            # print(vect[i].strip())
             dictionary = ast.literal_eval(vect[i].strip())
             for key, value in dictionary.items():
-               if(value == 'superkingdom'):
+               if(value == sys.argv[1]):
                    y_pred.append(key)
                    found = True
 
         if(not found):
-            print(line)
+            #print(line)
             y_pred.append(0)
             
-print(y_true)
-print(y_pred)
+#print(y_true)
+#print(y_pred)
+
 
 recall=recall_score(y_true, y_pred, average='macro')
 print("The average recall %s "% recall)
