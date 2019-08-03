@@ -47,7 +47,7 @@ with open('results/high/cnn_prediction.txt','r') as f:
                    found = True
 
         if(not found):
-            #print(line)
+            print(line)
             y_pred.append(0)
             
 #print(y_true)
