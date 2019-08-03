@@ -7,7 +7,7 @@ from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
 from keras.models import model_from_json
 
-dataset = pd.read_csv('../NLP/vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv')
+dataset = pd.read_csv('../../NLP/vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv')
 X = dataset.iloc[:, 1:101].values
 y = dataset.iloc[:, 0].values
 encoder = LabelEncoder( )
