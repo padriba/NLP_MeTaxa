@@ -4,7 +4,7 @@ import csv
 ncbi = NCBITaxa()
 
 
-dataset = pd.read_csv('../NLP/vectorisation_results/low/metagenomicreadsigntaures_8_mers.csv', header=None)
+dataset = pd.read_csv('../../NLP/vectorisation_results/low/metagenomicreadsigntaures_8_mers.csv', header=None)
 X = dataset.iloc[:, 1:101].values
 y = dataset.iloc[:, 0].values
 
