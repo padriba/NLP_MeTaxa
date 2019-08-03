@@ -80,4 +80,4 @@ with open("high_cnn.json", "w") as json_file:
 #Brahim added this line
 model.save_weights("high_cnn.h5")
 print("Saved model to disk")
-#score = model.evalute(X_test,y_test,verbose=0)
+score = model.evalute(X_test,y_test,verbose=0)
