@@ -77,11 +77,10 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
         
         A file named reference.txt will be found in ./CNN/Metrics_By_Rank/results/
         
-     * Finally, launch the mertric for the three datasets
-     
+     * Finally, launch the metrics for the three datasets, the taxonomic rank we need to measure is passed as parameter.
         ```sh
-          python ./CNN/Metrics_By_Rank/low_metrics.py
-          python ./CNN/Metrics_By_Rank/medium_metrics.py
-          python ./CNN/Metrics_By_Rank/high_metrics.py
+          python ./CNN/Metrics_By_Rank/low_metrics.py species
+          python ./CNN/Metrics_By_Rank/medium_metrics.py genus
+          python ./CNN/Metrics_By_Rank/high_metrics.py superkingdom
         ```
      
