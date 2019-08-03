@@ -7,7 +7,7 @@ from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
 from keras.models import model_from_json
 
-dataset = pd.read_csv('../../NLP/vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv')
+dataset = pd.read_csv('NLP/vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv')
 X = dataset.iloc[:, 1:101].values
 y = dataset.iloc[:, 0].values
 encoder = LabelEncoder( )
@@ -57,12 +57,12 @@ def fbeta_score(y_true, y_pred, beta=1):
 def fmeasure(y_true, y_pred):
     return fbeta_score(y_true, y_pred, beta=1)
 # load json and create model
-json_file = open('../high_cnn_template.json', 'r')
+json_file = open('CNN/high_cnn_template.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 # load weights into new model
-loaded_model.load_weights("../high_cnn_template.h5")
+loaded_model.load_weights("CNN/high_cnn_template.h5")
 print("Loaded model from disk")
 loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy',precision, recall,fbeta_score])
 score = loaded_model.evaluate(X, y, verbose=0)
@@ -71,7 +71,7 @@ print("%s: %.2f%%" % (loaded_model.metrics_names[2], score[2]*100))
 print("%s: %.2f%%" % (loaded_model.metrics_names[3], score[3]*100))
 print("%s: %.2f%%" % (loaded_model.metrics_names[4], score[4]*100))
 
-df = pd.read_csv('../../NLP/vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv', header=None)
+df = pd.read_csv('NLP/vectorisation_results/high/metagenomicreadsigntaures_8_mers.csv', header=None)
 X = df.iloc[:, 1:101].values
 y = df.iloc[:, 0].values
 sc = StandardScaler()
@@ -92,7 +92,7 @@ print(y_results)
 from ete3 import NCBITaxa
 ncbi = NCBITaxa()
 
-fileoutput = open('results/high/cnn_prediction.txt','w+')
+fileoutput = open('CNN/Metrics_By_Rank/results/high/cnn_prediction.txt','w+')
 # show the inputs and predicted outputs
 for i in range(len(y_results)):
 	#print("X=%s, Predicted=%s" % (x_to_pred[i], y_results[i]))

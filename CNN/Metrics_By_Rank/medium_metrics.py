@@ -10,7 +10,7 @@ y_true = []
 y_pred = []
 
 
-with open('results/medium/reference.txt','r') as f:
+with open('CNN/Metrics_By_Rank/results/medium/reference.txt','r') as f:
    
     for line in f:
         vect = line.replace('[','')
@@ -30,7 +30,7 @@ with open('results/medium/reference.txt','r') as f:
 
        
 
-with open('results/medium/cnn_prediction.txt','r') as f:
+with open('CNN/Metrics_By_Rank/results/medium/cnn_prediction.txt','r') as f:
     
     for line in f:
         vect = line.replace('[','')

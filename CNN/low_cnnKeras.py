@@ -5,7 +5,7 @@ import tensorflow as tf
 from keras.utils import np_utils
 from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
-dataset = pd.read_csv('../NLP/vectorisation_results/low/metagenomicreadsigntaures_8_mers.csv')
+dataset = pd.read_csv('NLP/vectorisation_results/low/metagenomicreadsigntaures_8_mers.csv')
 X = dataset.iloc[:, 1:101].values
 y = dataset.iloc[:, 0].values
 encoder = LabelEncoder( )
@@ -80,9 +80,9 @@ model.add(Dense(28,activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy',precision, recall,fbeta_score])
 model.fit(X_train,y_train,batch_size=10000,nb_epoch=3000)
 model_json = model.to_json()
-with open("low_cnn.json", "w") as json_file:
+with open("CNN/low_cnn.json", "w") as json_file:
     json_file.write(model_json)
 ###Brahim added this line
-model.save_weights("low_cnn.h5")
+model.save_weights("CNN/low_cnn.h5")
 print("Saved model to disk")
 #score = model.evalute(X_test,y_test,verbose=0)

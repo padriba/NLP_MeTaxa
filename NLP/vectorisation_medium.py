@@ -13,7 +13,7 @@ def Save_Csv_File(vector,tax_id):
 
 def get_Taxonomy_ID(se_record_id):
    
-     with open('../Dataset/NLP_DataSet/medium/pooled_gsa_mapping.csv','r') as f:
+     with open('Dataset/NLP_DataSet/medium/pooled_gsa_mapping.csv','r') as f:
           for line in f:
               #print (line)
               if se_record_id in line.split(','):
@@ -24,9 +24,9 @@ def get_Taxonomy_ID(se_record_id):
     
 
     
-folder = '../Dataset/NLP_DataSet/nseq_medium'
-filepath = 'dna2vec-1-8_high.w2v'
-outputfile = 'vectorisation_results/medium/metagenomicreadsigntaures_8_mers.csv'
+folder = 'Dataset/NLP_DataSet/nseq_medium'
+filepath = 'NLP/dna2vec-1-8_high.w2v'
+outputfile = 'NLP/vectorisation_results/medium/metagenomicreadsigntaures_8_mers.csv'
 
 #delete the output files if they exist
 if os.path.exists(outputfile):
