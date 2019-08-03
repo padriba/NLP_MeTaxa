@@ -65,12 +65,12 @@ def fbeta_score(y_true, y_pred, beta=1):
 
 
 # load json and create model
-json_file = open('../CNN/high_cnn.json', 'r')
+json_file = open('../CNN/high_cnn_template.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 # load weights into new model
-loaded_model.load_weights("../CNN/high_cnn.h5")
+loaded_model.load_weights("../CNN/high_cnn_template.h5")
 print("Loaded model from disk")
 loaded_model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy',precision, recall,fbeta_score])
 
