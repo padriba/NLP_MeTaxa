@@ -3,6 +3,11 @@ NLP-MeTaxa is a convolutional neural network (CNN) classifier for taxonomic assi
 The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge, where the complexity is gradually ascendant among them, from the low until the high complexity dataset.
 
 # Evaluation
+  ## Requirements
+  - Please install these modules using --no-deps option
+    ```sh
+    arrow==0.8.0 biopython==1.68 boto==2.46.1 bz2file==0.98 ConfigArgParse==0.11.0 gensim==0.13.2 Logbook==1.0.0 pep8==1.7.0 pluggy==0.4.0 py==1.4.33 pytest==3.0.7 python-dateutil==2.6.0 requests==2.13.0 scipy==0.19.0 six==1.10.0 smart-open==1.5.1 tox==2.7.0 tox-pyenv==1.0.3 virtualenv==15.1.0 numpy keras tensorflow pandas scikit-learn joblib ete3 matplotlib cycler kiwisolver
+      ```
   ## Installation
   - Because of the existence of large files stored using Git Large File Storage (GLFS), you need first to install LFS package       before cloning the project. For example for Linux based system :
     ```sh
