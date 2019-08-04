@@ -1,4 +1,4 @@
-tool,precision,recall,accuracy,misclassification rate,level
+tool,precision %,recall %,accuracy %,misclassification rate%,level
 NLP_MeTaxa,91,73,99,1,superkingdom
 NLP_MeTaxa,94,87,96,4,phylum
 NLP_MeTaxa,95,88,92,8,class
