@@ -23,13 +23,13 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
    ```
    The output folder will contain __*.tsv__  and __*.tree__ files.
    
-   For each fasta files NLP_MeTaxa creates a tab-separated file with the headers (id	taxa_id	lineage)
+   For each fasta file NLP_MeTaxa creates a tab-separated file with the following headers (id	taxa_id	lineage)
    
    - id : the sequence id
    - taxa_id: taxonomic identifier
    - lineage: corresponding lineage track as a hierarchically sorted list of parent taxids
       
-   If the user chooses to print the NCBI taxnomy tree, NLP_MeTaxa will create for each fasta files a taxonomy tree
+   If the user chooses to print the NCBI taxnomy tree, NLP_MeTaxa will create for each fasta file a taxonomy tree
    
   - Because of the existence of large files stored using Git Large File Storage (GLFS), you need first to install LFS package       before cloning the project. For example for Linux based system :
     ```sh
