@@ -6,6 +6,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
 # Installation
    ## Docker image
    Pull the docker image
+   
      ```sh
        docker pull padriba/nlp_metaxa:latest
      ```
