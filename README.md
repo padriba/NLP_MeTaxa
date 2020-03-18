@@ -1,14 +1,35 @@
 # NLP_MeTaxa
-NLP-MeTaxa is a convolutional neural network (CNN) classifier for taxonomic assignments, trained with DNA fragments represented by word2vec embeddings.
+NLP-MeTaxa is a multilayer perceptron (MLP) classifier for taxonomic assignments, trained with DNA fragments represented by word2vec embeddings.
 The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge, where the complexity is gradually ascendant among them, from the low until the high complexity dataset.
 
 # Evaluation
-  ## Requirements
-  - Please install these modules using --no-deps option
-    ```sh
-    arrow==0.8.0, biopython==1.68, boto==2.46.1, bz2file==0.98, ConfigArgParse==0.11.0, gensim==0.13.2, Logbook==1.0.0, pep8==1.7.0, pluggy==0.4.0, py==1.4.33, pytest==3.0.7, python-dateutil==2.6.0, requests==2.13.0, scipy==0.19.0, six==1.10.0, smart-open==1.5.1, tox==2.7.0, tox-pyenv==1.0.3, virtualenv==15.1.0, numpy, keras, tensorflow, pandas, scikit-learn, joblib, ete3, matplotlib, cycler, kiwisolver.
-      ```
-  ## Installation
+# Installation
+   ## Docker image
+   Pull the docker image
+     ```sh
+       docker pull padriba/nlp_metaxa:latest
+     ```
+   To launch NLP_MeTaxa
+   ```sh
+      # /input/folder/ : input foder, contains fasta files
+      # /output/folder/ : output folder
+      # print_tree : Print the NCBI taxnomy tree
+      #               0 : dont print
+      #               1 : print it
+      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3       
+      /src/get_Taxa.py $(/input/folder/) $(/output/folder/) $(print_tree)
+
+   ```
+   The output folder will contain __*.tsv__  and __*.tree__ files.
+   
+   For each fasat files NLP_MeTaxa creates a tab separated file with the haders (id	taxa_id	lineage)
+   
+   - id : the sequence id
+   - taxa_id: taxonomic identifier
+   - lineage: corresponding lineage track as a hierarchically sorted list of parent taxids
+      
+   If user chosse to print the NCBI taxnomy tree, NLP_MeTaxa will create for each fasat files a taxnomy tree
+   
   - Because of the existence of large files stored using Git Large File Storage (GLFS), you need first to install LFS package       before cloning the project. For example for Linux based system :
     ```sh
       sudo apt-get install git-lfs
