@@ -30,18 +30,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
    - lineage: corresponding lineage track as a hierarchically sorted list of parent taxids
       
    If the user chooses to print the NCBI taxnomy tree, NLP_MeTaxa will create for each fasta file a taxonomy tree
-   
-  - Because of the existence of large files stored using Git Large File Storage (GLFS), you need first to install LFS package       before cloning the project. For example for Linux based system :
-    ```sh
-      sudo apt-get install git-lfs
-      git lfs install
-      ```
-  - Download NLP_MeTaxa by 
-    ```sh
-      git clone https://github.com/padriba/NLP_MeTaxa.git
-      ```
-   - Installation has been tested in Linux based system with Python 3.6.7.
-  
+     
   ## NLP Vectorization
   To get a word2vec embedding representation for the metagenomic sample:
    - For the low comlexity dataset:
