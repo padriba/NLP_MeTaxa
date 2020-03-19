@@ -32,27 +32,18 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
    If the user chooses to print the NCBI taxnomy tree, NLP_MeTaxa will create for each fasta file a taxonomy tree
      
   ## NLP Vectorization
-  To get a word2vec embedding representation for the metagenomic sample:
-   - For the low comlexity dataset:
+  To get a word2vec embedding representation :
+   
    
       ```sh
-        python ./NLP/vectorisation_low.py
+        # input_file : the file to vectozise
+        python ./NLP/vectorisation.py $(input_file)
       ```
-     The result will be found in ./NLP/vectorisation_results/low/
+   The result will be found in ./NLP/vectorisation_results/low/
     
-   - For the medium comlexity dataset:
    
-      ```sh
-        python ./NLP/vectorisation_medium.py
-      ```
-     The result will be found in ./NLP/vectorisation_results/medium/
-     
-   - For the high comlexity dataset:
    
-      ```sh
-        python ./NLP/vectorisation_high.py
-      ```
-     The result will be found in ./NLP/vectorisation_results/high/
+      
      
   ## Training CNN model
    - Data generated from the previous step are used to train the CNN mlodel
