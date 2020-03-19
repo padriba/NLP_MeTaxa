@@ -38,7 +38,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
      # input_file : the file to vectozise
      python ./NLP/vectorisation.py $(input_file)
    ```
-   The result will be found in ./NLP/vectorisation_results/low/
+   The result will be found in ./NLP/vectorisation_results/
     
    
    
