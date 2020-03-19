@@ -45,23 +45,13 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
       
      
   ## Training MLP model
-   - Data generated from the previous step are used to train the CNN mlodel
-   - To train the CNN model for the three datasets
+   - To train the MPL model for the three datasets
     
        ```sh
-          python ./CNN/low_cnnKeras.py
-          python ./CNN/medium_cnnKeras.py
-          python ./CNN/high_cnnKeras.py
+          python ./MLP/train_feedfroward.py
         ```
         Models and weights are saved as .json files and .h5 respectively
-  ## Crossvalidation      
-   - To launch a crossvalidation for the three datasets
-   
-       ```sh
-          python ./CNN/low_crossvalidation.py
-          python ./CNN/medium_crossvalidation.py
-          python ./CNN/high_crossvalidation.py
-        ```
+        
   ## Metrics by rank
   
   - To asses NLP-MeTaxa performance across the different NCBI taxonomic ranks 
