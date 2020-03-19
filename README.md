@@ -44,7 +44,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
    
       
      
-  ## Training CNN model
+  ## Training MLP model
    - Data generated from the previous step are used to train the CNN mlodel
    - To train the CNN model for the three datasets
     
