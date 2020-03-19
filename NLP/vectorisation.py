@@ -67,7 +67,7 @@ results = {}
 #print("build iterval--> end")
 
 fastafiles_dict = {}
-outputfile = 'vectorisation_results.csv'
+outputfile = 'vectorisation_results/vectorisation_results.csv'
 #outputfile = 'metagenomics_signatures_1-8_CAMI_from_genome_means.csv'
 mk_model = MultiKModel('dna2vec_1-8_all.w2v')
 
