@@ -34,11 +34,10 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
   ## NLP Vectorization
   To get a word2vec embedding representation :
    
-   
-      ```sh
-        # input_file : the file to vectozise
-        python ./NLP/vectorisation.py $(input_file)
-      ```
+  ```sh
+     # input_file : the file to vectozise
+     python ./NLP/vectorisation.py $(input_file)
+   ```
    The result will be found in ./NLP/vectorisation_results/low/
     
    
