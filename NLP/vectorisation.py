@@ -3,7 +3,7 @@ import os
 from Bio import SeqIO
 import random
 import sys
-from dna2vec.dna2vec.multi_k_model import MultiKModel
+from dna2vec.multi_k_model import MultiKModel
 import numpy as np
 import re
 import datetime
@@ -69,7 +69,7 @@ results = {}
 fastafiles_dict = {}
 outputfile = 'vectorisation_results.csv'
 #outputfile = 'metagenomics_signatures_1-8_CAMI_from_genome_means.csv'
-mk_model = MultiKModel('dna2vec/dna2vec_1-8_all.w2v')
+mk_model = MultiKModel('dna2vec_1-8_all.w2v')
 
 
 files = list()
