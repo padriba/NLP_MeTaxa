@@ -56,21 +56,21 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
   - To asses NLP-MeTaxa performance across the different NCBI taxonomic ranks 
     *  First we need to creat a prediction file for the three datasets:
        ```sh
-          python ./CNN/Metrics_By_Rank/low_creat_predection.py
-          python ./CNN/Metrics_By_Rank/medium_creat_predection.py
-          python ./CNN/Metrics_By_Rank/high_creat_predection.py
+          python ./MLP/low_creat_predection.py
+          python ./MLP/medium_creat_predection.py
+          python ./MLP/high_creat_predection.py
         ```
-       A file named cnn_prediction.txt will be found in ./CNN/Metrics_By_Rank/results/
+       A file named fcl_$level$_prediction.txt will be found in ./MLP/
        
     * Then we creat a refrecence file from the CAMI dataset across the three different level
     
         ```sh
-          python ./CNN/Metrics_By_Rank/low_creat_ref.py
-          python ./CNN/Metrics_By_Rank/medium_creat_ref.py
-          python ./CNN/Metrics_By_Rank/high_creat_ref.py
+          python ./MLP/low_creat_ref.py
+          python ./MLP/medium_creat_ref.py
+          python ./MLP/high_creat_ref.py
         ```
         
-        A file named reference.txt will be found in ./CNN/Metrics_By_Rank/results/
+        A file named reference_$level$.txt will be found in ./MLP/
         
      * Finally, launch the metrics for the three datasets, the taxonomic rank (superkingdom, phylum, class, order, family, genus, species) we want to measure is passed as parameter.
         ```sh
