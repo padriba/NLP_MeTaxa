@@ -74,8 +74,8 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
         
      * Finally, launch the metrics for the three datasets, the taxonomic rank (superkingdom, phylum, class, order, family, genus, species) we want to measure is passed as parameter.
         ```sh
-          python ./CNN/Metrics_By_Rank/low_metrics.py species
-          python ./CNN/Metrics_By_Rank/medium_metrics.py genus
-          python ./CNN/Metrics_By_Rank/high_metrics.py superkingdom
+          python ./MLP/low_metrics.py species
+          python ./MLP/medium_metrics.py genus
+          python ./MLP/high_metrics.py superkingdom
         ```
      
