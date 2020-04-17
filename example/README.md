@@ -11,5 +11,23 @@ This is an example on how to use NLP_MeTaxa using the three CAMI datasets
     $USER_HOME$/input/high/
   ```
   
-  3. copy the downloaded datasets in these directories
-  4. 
+3. copy the downloaded datasets in these directories
+4. creat an output directory: 
+    ```
+    $USER_HOME$/output/
+    ```
+5. pull the docker image
+
+    ```sh
+     docker pull padriba/nlp_metaxa:latest
+   ```
+6. To launch NLP_MeTaxa on the low-compelexity dataset
+     ```sh
+      # print_tree : Print the NCBI taxnomy tree
+      #               0 : dont print
+      #               1 : print it
+      docker run -v $USER_HOME$/input/low/:/src/input -v $USER_HOME$/output/:/src/output -t padriba/nlp_metaxa python3       
+      /src/get_Taxa.py $USER_HOME$/input/low/ $USER_HOME$/output/ $(print_tree)
+
+   ```
+  
