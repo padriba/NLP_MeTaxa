@@ -30,4 +30,6 @@ This is an example on how to use NLP_MeTaxa using the three CAMI datasets
       /src/get_Taxa.py $USER_HOME$/input/low/ $USER_HOME$/output/ $(print_tree)
 
    ```
+  you can do the same think for the two others datasets, just change the input folder.
   
+  7. 
