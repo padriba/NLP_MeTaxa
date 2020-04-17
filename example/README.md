@@ -4,3 +4,8 @@ This is an example on how to use NLP_MeTaxa using the three CAMI datasets
     [Medium complexity dataset](https://drive.google.com/open?id=1dBhelGLAm_zKB0s1m2rAO3UJqDqXkGJV) .
     [High complexity dataset](https://drive.google.com/open?id=1KhPt1rpzCTvoiPqQBZ31xoB1a89G51xD) .
     
+2. Creat in your home an input directory for each dataset:
+    $homme_user$/input/low/
+    $homme_user$/input/medium/
+    $homme_user$/input/high/
+    
