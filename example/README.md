@@ -2,7 +2,7 @@ This is an example of using NLP_MeTaxa with three CAMI datasets
 1. Download the three datasets:
     [low](https://drive.google.com/open?id=1-0uaypF4TaWNELcvZ05DiKJyjZVkDT-a), [medium](https://drive.google.com/open?id=1-8VenrEdSc7D1sAKrFdht1XR_hZIC7Lr) and [high](https://drive.google.com/open?id=1-9AKKjRA-ca-CjwFz2tSV9a_-mk_nTGs) complexity datasets.
     
-2. Creat an input directory for each dataset:
+2. Create an input directory for each dataset:
   ```
     $USER_HOME$/input/low/
     $USER_HOME$/input/medium/
@@ -10,7 +10,7 @@ This is an example of using NLP_MeTaxa with three CAMI datasets
   ```
   
 3. copy the downloaded datasets in these directories
-4. creat an output directory: 
+4. Create an output directory: 
     ```
     $USER_HOME$/output/
     ```
