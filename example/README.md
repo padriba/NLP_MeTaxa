@@ -30,4 +30,4 @@ This is an example on how to use NLP_MeTaxa using the three CAMI datasets
    ```
   you can do the same think for the two others datasets, just change the input folder.
   
-  7. 
+  7. The output will be found in the ``` $USER_HOME$/output/ ``` directory. 
