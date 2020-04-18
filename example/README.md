@@ -19,7 +19,7 @@ This is an example on how to use NLP_MeTaxa using the three CAMI datasets
     ```sh
      docker pull padriba/nlp_metaxa:latest
    ```
-6. To launch NLP_MeTaxa on the low-compelexity dataset
+6. To launch NLP_MeTaxa on the low-compelexity dataset, if you want to print the NCBI taxnomy tree set ``` print_tree ``` parameter to ```1```. if you do not want to print it, set it to ```0```. 
      ```sh
       # print_tree : Print the NCBI taxnomy tree
       #               0 : dont print
