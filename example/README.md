@@ -9,12 +9,12 @@ This is an example of using NLP_MeTaxa with three CAMI datasets
     $USER_HOME$/input/high/
   ```
   
-3. copy the downloaded datasets in these directories
+3. Copy the downloaded datasets in these directories.
 4. Create an output directory: 
     ```
     $USER_HOME$/output/
     ```
-5. pull the docker image
+5. Pull the docker image.
 
     ```sh
      docker pull padriba/nlp_metaxa:latest
