@@ -30,4 +30,4 @@ This is an example of using NLP_MeTaxa with three CAMI datasets
    ```
      You can do the same thing for the two other datasets, just change the input folder.
   
-  7. Once the processing is done, there should be a ```low_taxa.tsv``` and ```low_taxa.tree``` (if you choose to print the NCBI taxnomy tree) files in your ``` $USER_HOME$/output/ ``` directory. 
+  7. Once the processing is done, there should be a ```low_taxa.tsv``` and ```low_taxa.tree``` (if you choose to print the NCBI taxonomy  tree) files in your ``` $USER_HOME$/output/ ``` directory. 
