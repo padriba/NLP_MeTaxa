@@ -1,0 +1,4 @@
+id	taxa_id	lineage
+RL|S1|C0	[431061]	[{1: 'no rank'}, {131567: 'no rank'}, {2: 'superkingdom'}, {1224: 'phylum'}, {28216: 'class'}, {80840: 'order'}, {119065: 'no rank'}, {224471: 'no rank'}, {93681: 'genus'}, {431061: 'species'}]
+RL|S1|C1	[1714860]	[{1: 'no rank'}, {131567: 'no rank'}, {2: 'superkingdom'}, {1783270: 'no rank'}, {68336: 'no rank'}, {976: 'phylum'}, {117743: 'class'}, {200644: 'order'}, {49546: 'family'}, {290174: 'genus'}, {2627091: 'no rank'}, {1714860: 'species'}]
+RL|S1|C2	[1120996]	[{1: 'no rank'}, {131567: 'no rank'}, {2: 'superkingdom'}, {1783272: 'no rank'}, {1239: 'phylum'}, {186801: 'class'}, {186802: 'order'}, {186803: 'family'}, {653683: 'genus'}, {264463: 'species'}, {1120996: 'no rank'}]
