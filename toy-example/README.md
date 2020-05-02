@@ -6,7 +6,7 @@ This is a toy example of using NLP_MeTaxa
 ```
 - Clone the NLP_MeTaxa repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git ``` in your home directory
 
-  To print both the taxonomic assignment and the  NCBI Taxonomy Tree: 
+- To print both the taxonomic assignment and the  NCBI Taxonomy Tree: 
   ```
    sudo docker run -v ~/NLP_MeTaxa/toy-example/input/:/src/input -v ~/NLP_MeTaxa/toy-example/output_tree/:/src/output -t    padriba/nlp_metaxa python3 /src/get_Taxa.py ~/NLP_MeTaxa/toy-example/input/ ~/NLP_MeTaxa/toy-example/output_tree/ 1
   ```
