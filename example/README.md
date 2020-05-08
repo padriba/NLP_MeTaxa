@@ -1,6 +1,6 @@
 This is an example of using NLP_MeTaxa with three CAMI datasets
 1. Download the three datasets:
-    [low](https://drive.google.com/open?id=1-0uaypF4TaWNELcvZ05DiKJyjZVkDT-a), [medium](https://drive.google.com/open?id=1-8VenrEdSc7D1sAKrFdht1XR_hZIC7Lr) and [high](https://drive.google.com/open?id=1-9AKKjRA-ca-CjwFz2tSV9a_-mk_nTGs) complexity datasets.
+    [low](https://openstack.cebitec.uni-bielefeld.de:8080/swift/v1/CAMI_I_LOW/gold_standard_low_single.fasta.gz), [medium](https://openstack.cebitec.uni-bielefeld.de:8080/swift/v1/CAMI_I_MEDIUM/CAMI_medium_GoldStandardAssembly.fasta.gz) and [high](https://openstack.cebitec.uni-bielefeld.de:8080/swift/v1/CAMI_I_HIGH/CAMI_high_GoldStandardAssembly.fasta.gz) complexity datasets.
     
 2. Create an input directory for each dataset:
   ```
