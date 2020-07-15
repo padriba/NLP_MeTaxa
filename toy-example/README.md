@@ -4,17 +4,17 @@ This is a toy example of using NLP_MeTaxa
 ```
   docker pull padriba/nlp_metaxa:latest
 ```
-- Downolad the fasta file from this link
-- Clone the NLP_MeTaxa repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git ``` in your home directory
+- Downolad the fasta file from this  [link](https://dl.dropbox.com/s/yfkrlns8qw9n788/example.fasta?dl=1)
+- Create an ```input``` and ```output``` folders in your home directory, and copy ```example.fasta``` in the ```input``` folder
 
 - To get both the taxonomic assignment and print the  NCBI Taxonomy Tree run the following command: 
   ```
-   sudo docker run -v ~/NLP_MeTaxa/toy-example/input/:/src/input -v ~/NLP_MeTaxa/toy-example/output_tree/:/src/output -t    padriba/nlp_metaxa python3 /src/get_Taxa.py ~/NLP_MeTaxa/toy-example/input/ ~/NLP_MeTaxa/toy-example/output_tree/ 1
+   sudo docker run -v ~/input/:/src/input -v ~/output/:/src/output -t    padriba/nlp_metaxa python3 /src/get_Taxa.py ~/input/ ~/output/ 1
   ```
-  The output folder ```output_tree ``` will contain ```example_taxa.tsv``` and ```example_taxa.tree``` files
+  The output folder ```output ``` will contain ```example_taxa.tsv``` and ```example_taxa.tree``` files
 
 - To get only the taxonomic assignment of sequences in input directory:
   ```
-    sudo docker run -v ~/NLP_MeTaxa/toy-example/input/:/src/input -v ~/NLP_MeTaxa/toy-example/output_no_tree/:/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py ~/NLP_MeTaxa/toy-example/input/ ~/NLP_MeTaxa/toy-example/output_no_tree/ 0
+    sudo docker run -v ~/input/:/src/input -v ~/output/:/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py ~/input/ ~/output/ 0
   ```
-  The output folder ```output_no_tree``` will contain a file named ```example_taxa.tsv```
+  The output folder ```output``` will contain a file named ```example_taxa.tsv```
