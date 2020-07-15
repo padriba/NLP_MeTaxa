@@ -4,6 +4,7 @@ This is a toy example of using NLP_MeTaxa
 ```
   docker pull padriba/nlp_metaxa:latest
 ```
+- Downolad the fasta file from this link
 - Clone the NLP_MeTaxa repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git ``` in your home directory
 
 - To get both the taxonomic assignment and print the  NCBI Taxonomy Tree run the following command: 
