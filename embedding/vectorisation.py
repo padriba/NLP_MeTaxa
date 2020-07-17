@@ -47,11 +47,9 @@ for (dirpath, dirnames, filenames) in os.walk(folder):
 vectorized = dict()
 corected_sequences = {}
 results = {}
-k=0
-rng = int(sys.argv[1])
 for file in files:
     #print(file)
-   basename= os.path.basename(file) 
+     basename= os.path.basename(file) 
      if(dict_spec[basename.split('.')[0]]<1000):
         print(basename)
         co = 1000
