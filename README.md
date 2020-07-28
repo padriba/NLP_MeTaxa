@@ -40,8 +40,8 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
       docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3       
       /src/vectorisation.py
    ```
-   
-    
+   The fasta files in the input directory must respect the following naming policy : Taxonomy_id.****.fna(fasta)
+
    
    
       
