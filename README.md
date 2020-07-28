@@ -48,12 +48,19 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
       
      
   ## Training MLP model
-   - To train the MPL model for the three datasets
+   - To train a new MPL model
     
        ```sh
-          python ./MLP/train_feedfroward.py
+         # /input/folder/vectorisation_resuls.csv : is the embedding CSV file created in the previous step
+         # /output/folder/: the output folder
+         # class number : the class number in the embedding CSV file
+         # batch size
+         # epochs
+         
+          docker run -v $(/input/folder/vectorisation_resuls.csv):/src/input/vectorisation_results.csv -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3       
+        /src/train_feedforward.py $(class number) $(batch size) $(epochs)
         ```
-        Models and weights are saved as .json files and .h5 respectively
+        
         
   ## Metrics by rank
   
