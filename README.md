@@ -4,6 +4,8 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
 # Videos
 
 The following videos show the main functions given by NLP-MeTaxa, tested in Windows and Linux environments. If you do not want to read the whole document you can simply watch  these videos.
+- [Window environment](https://dl.dropbox.com/s/doze8dwv2quyq8p/video_wind_last.mp4?dl=1)
+- [Linux environment](https://dl.dropbox.com/s/8g6vnh67y5whlxm/video_linux_last.mp4?dl=1)
 
 # Installation
    ## Docker image
