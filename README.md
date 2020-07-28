@@ -9,7 +9,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
    ```sh
      docker pull padriba/nlp_metaxa:latest
    ```
-   To launch NLP_MeTaxa
+   To launch NLP-MeTaxa
    ```sh
       # /input/folder/ : input foder, contains fasta files
       # /output/folder/ : output folder
@@ -28,7 +28,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
    - taxa_id: taxonomic identifier
    - lineage: corresponding lineage track as a hierarchically sorted list of parent taxids
       
-   If the user chooses to print the NCBI taxnomy tree, NLP_MeTaxa will create for each fasta file a taxonomy tree
+   If the user chooses to print the NCBI taxnomy tree, NLP-MeTaxa will create for each fasta file a taxonomy tree
      
   ## NLP Vectorization
   To get a word2vec embedding representation :
