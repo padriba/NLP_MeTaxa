@@ -17,7 +17,7 @@ The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge,
       #               0 : dont print
       #               1 : print it
       docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3       
-      /src/get_Taxa.py $(/input/folder/) $(/output/folder/) $(print_tree)
+      /src/get_Taxa.py $(print_tree)
 
    ```
    The output folder will contain __*.tsv__  and __*.tree__ files.
