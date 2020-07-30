@@ -9,7 +9,7 @@ This is a toy example of using NLP_MeTaxa
 
 - To get both the taxonomic assignment and print the  NCBI Taxonomy Tree run the following command: 
   ```
-   sudo docker run -v ~/input/:/src/input -v ~/output/:/src/output -t    padriba/nlp_metaxa python3 /src/get_Taxa.py 1
+   sudo docker run -v ~/input/:/src/input -v ~/output/:/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py 1
   ```
   The output folder ```output ``` will contain ```example_taxa.tsv``` and ```example_taxa.tree``` files
 
