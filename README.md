@@ -74,11 +74,11 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
       #               1 : print it
       # /path/to/model/model.h5 : The model created in the previous step
       # /path/to/embedding/vectorisation_results.csv: the embedding CSV file
-      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -v $(/path/to/model/model.h5):/src/model.h5 -v $(/path/to/embedding/vectorisation_results.csv):/src/vectorisation_results.csv -t padriba/nlp_metaxa python3       
+      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -v $(/path/to/model/model.h5):/src/model.h5 -v     $(/path/to/embedding/vectorisation_results.csv):/src/vectorisation_results.csv -t padriba/nlp_metaxa python3       
       /src/get_Taxa_custome.py $(print_tree)
 
-   ```
-        
+     ```
+
   ## Metrics by rank
   
   - To asses NLP-MeTaxa performance across the different NCBI taxonomic ranks 
