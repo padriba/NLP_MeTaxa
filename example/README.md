@@ -25,7 +25,7 @@ This is an example of using NLP_MeTaxa with three CAMI datasets
       #               0 : dont print
       #               1 : print it
       docker run -v $HOME/input/low:/src/input -v $HOME/output:/src/output -t padriba/nlp_metaxa python3       
-      /src/get_Taxa.py $HOME/input/low $HOME/output $(print_tree)
+      /src/get_Taxa.py $(print_tree)
 
    ```
      You can do the same thing for the two other datasets, just change the input folder.
