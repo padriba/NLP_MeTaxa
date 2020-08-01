@@ -3,9 +3,10 @@ NLP-MeTaxa is a multilayer perceptron (MLP) classifier for taxonomic assignments
 The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge, where the complexity is gradually ascendant among them, from the low until the high complexity dataset.
 # Videos
 
-The following videos show the main functions given by NLP-MeTaxa, tested in Windows and Linux environments. If you do not want to read the whole document you can simply watch  these videos.
+The following videos show the main functions given by NLP-MeTaxa, tested in Windows, Linux and Mac environments. If you do not want to read the whole document you can simply watch  these videos.
 - [Window environment](https://dl.dropbox.com/s/0ngkfnryijsyoo5/video_wind_very_last.mp4?dl=1)
 - [Linux environment](https://dl.dropbox.com/s/95riudpatuygdst/video_linux_very_last.mp4?dl=1)
+- [Mac OS environement](https://dl.dropbox.com/s/z5y3zpipeme65et/video_mac_very_last.mp4?dl=1)
 
 # Installation
    ## Docker image
