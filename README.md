@@ -22,8 +22,7 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
       # print_tree : Print the NCBI taxnomy tree
       #               0 : dont print
       #               1 : print it
-      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3       
-      /src/get_Taxa.py $(print_tree)
+      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py $(print_tree)
 
    ```
    The output folder will contain __*.tsv__  and __*.tree__ files.
@@ -43,8 +42,7 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
       # /input/folder/ : input foder, contains fasta files
       # /output/folder/ : output folder
 
-      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3       
-      /src/vectorisation.py
+      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3 /src/vectorisation.py
    ```
    The fasta files in the input directory must respect the following naming policy : Taxonomy_id.****.fna(fasta).
    This is because the vectorization result is going to be used to train the model, and we need labeled data to that
@@ -63,8 +61,7 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
          # batch size
          # epochs
          
-          docker run -v $(/input/folder/vectorisation_resuls.csv):/src/input/vectorisation_results.csv -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3       
-        /src/train_feedforward.py $(class number) $(batch size) $(epochs)
+          docker run -v $(/input/folder/vectorisation_resuls.csv):/src/input/vectorisation_results.csv -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3  /src/train_feedforward.py $(class number) $(batch size) $(epochs)
         ```
    - Taxonomic classification with the new model    
       ```sh
@@ -75,8 +72,7 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
       #               1 : print it
       # /path/to/model/model.h5 : The model created in the previous step
       # /path/to/embedding/vectorisation_results.csv: the embedding CSV file
-      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -v $(/path/to/model/model.h5):/src/model.h5 -v     $(/path/to/embedding/vectorisation_results.csv):/src/vectorisation_results.csv -t padriba/nlp_metaxa python3       
-      /src/get_Taxa_custome.py $(print_tree)
+      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -v $(/path/to/model/model.h5):/src/model.h5 -v  $(/path/to/embedding/vectorisation_results.csv):/src/vectorisation_results.csv -t padriba/nlp_metaxa python3 /src/get_Taxa_custome.py $(print_tree)
 
      ```
 
