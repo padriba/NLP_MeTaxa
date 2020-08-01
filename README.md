@@ -22,7 +22,7 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
       # print_tree : Print the NCBI taxnomy tree
       #               0 : dont print
       #               1 : print it
-      docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py $(print_tree)
+docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py $(print_tree)
 
    ```
    The output folder will contain __*.tsv__  and __*.tree__ files.
