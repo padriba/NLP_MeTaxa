@@ -105,7 +105,15 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
       # /path/to/embedding/vectorisation_results.csv: the embedding CSV file
       docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -v $(/path/to/model/model.h5):/src/model.h5 -v  $(/path/to/embedding/vectorisation_results.csv):/src/vectorisation_results.csv -t padriba/nlp_metaxa python3 /src/get_Taxa_custome.py $(print_tree)
 
+     ``` 
+     ```sh
+         cd NLP_MeTaxa
+         mv input/vectorisation_results.csv .
+         mv output/model.h5 .
+         #copy in input foder the fasta files to predict
+         python3 get_Taxa_custome.py $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
      ```
+     
 
   ## Metrics by rank
   
