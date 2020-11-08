@@ -92,6 +92,8 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
          mkdir output # the output folder
          python3 train_feedforward.py $(class number) $(batch size) $(epochs) # class number : the class number in the embedding CSV file   
       ```
+      The output folder will contain a file named ```model.h5``` .
+      
    - Taxonomic classification with the new model    
       ```sh
       # /input/folder/ : input foder, contains fasta files
