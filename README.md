@@ -86,6 +86,12 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
          
           docker run -v $(/input/folder/vectorisation_resuls.csv):/src/input/vectorisation_results.csv -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3  /src/train_feedforward.py $(class number) $(batch size) $(epochs)
         ```
+      ```sh
+         cd NLP_MeTaxa
+         mkdir input # the input folder, copy in this folder vectorisation_resuls.csv, which is the embedding CSV file created in the previous step
+         mkdir output # the output folder
+         python3 train_feedforward.py $(class number) $(batch size) $(epochs) # class number : the class number in the embedding CSV file   
+      ```
    - Taxonomic classification with the new model    
       ```sh
       # /input/folder/ : input foder, contains fasta files
