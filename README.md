@@ -67,7 +67,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
    ```
    
    The fasta files in the input directory must respect the following naming policy : Taxonomy_id.****.fna(fasta).
-   This is because the vectorization result is going to be used to train the model, and we need labeled data.
+   This is because the vectorization result is going to be used to train the model, and we need labeled data./
    The output folder will contain a file named ```vectorisation_results.csv```.
 
    
