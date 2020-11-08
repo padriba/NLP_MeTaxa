@@ -47,7 +47,7 @@ os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
 file = 'model.h5'
 model = tf.keras.models.load_model(file,custom_objects={'precision':precision,'recall':recall})
 
-mk_model = MultiKModel('dna2vec_1-8_all.w2v')
+mk_model = MultiKModel('embedding/dna2vec_1-8_all.w2v')
 ncbi = NCBITaxa()
 
 
