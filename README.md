@@ -37,7 +37,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
       cd NLP_MeTaxa
       mkdir input # the input folder, contains fasta files
       mkdir output # the output folder
-      python3 get_Taxa.pyt $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
+      python3 get_Taxa.py $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
    ```
    
    The output folder will contain __*.tsv__  and __*.tree__ files.
