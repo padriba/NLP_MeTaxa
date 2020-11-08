@@ -25,7 +25,7 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
    
    To launch NLP-MeTaxa
    ```sh
-      # /input/folder/ : input foder, contains fasta files
+      # /input/folder/ : input folder, contains fasta files
       # /output/folder/ : output folder
       # print_tree : Print the NCBI taxnomy tree
       #               0 : dont print
@@ -33,6 +33,12 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
 docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py $(print_tree)
 
    ```
+   ```sh
+      cd NLP_MeTaxa
+      mkdir {input,output} # the input folder, contains fasta files
+      python3 get_Taxa.pyt $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
+   ```
+   
    The output folder will contain __*.tsv__  and __*.tree__ files.
    
    For each fasta file NLP-MeTaxa creates a tab-separated file with the following headers ``` id	taxa_id	lineage ```
