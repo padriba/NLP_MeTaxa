@@ -3,7 +3,7 @@ import os
 from Bio import SeqIO
 import random
 import sys
-from dna2vec.dna2vec.multi_k_model import MultiKModel
+from embedding.dna2vec.multi_k_model import MultiKModel
 import numpy as np
 import re
 import datetime
