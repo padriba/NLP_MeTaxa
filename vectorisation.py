@@ -35,7 +35,7 @@ for filename in files:
 
 outputfile = os.path.join('output','vectorisation_results.csv')
 
-mk_model = MultiKModel('dna2vec_1-8_all.w2v')
+mk_model = MultiKModel('embedding/dna2vec_1-8_all.w2v')
 
 
 
