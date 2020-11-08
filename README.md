@@ -1,6 +1,7 @@
 # NLP-MeTaxa
 NLP-MeTaxa is a multilayer perceptron (MLP) classifier for taxonomic assignments, trained with DNA fragments represented by word2vec embeddings.
 The NLP-MeTaxa was evaluated on three datasets used in the first CAMI challenge, where the complexity is gradually ascendant among them, from the low until the high complexity dataset.
+NLP-MeTaxa was trained on a large scale data from the NCBI RefSeq,more than 14,000 complete microbial genomes.
 # Videos
 
 The following videos show the main functions given by NLP-MeTaxa, tested in Windows, Linux and Mac environments. If you do not want to read the whole document you can simply watch  these videos.
