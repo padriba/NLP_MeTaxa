@@ -20,6 +20,9 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
    ```sh
      docker pull padriba/nlp_metaxa:latest
    ```
+   In the following, you find two commands, one for NLP_MeTaxa docker image and the other if you install NLP_MeTaxa from source.
+   ## Taxonomic assignment
+   
    To launch NLP-MeTaxa
    ```sh
       # /input/folder/ : input foder, contains fasta files
