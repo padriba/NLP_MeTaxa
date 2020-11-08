@@ -10,6 +10,10 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
 - [Mac OS environement](https://dl.dropbox.com/s/z5y3zpipeme65et/video_mac_very_last.mp4?dl=1)
 
 # Installation
+   ## Building from source
+   1- Clone the ```NLP-MeTaxa``` repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git```
+   2- The required python version is ```3.6.9```
+   3- Install Python dependencies: ```pip3 install -r requirements.txt```
    ## Docker image
    Pull the docker image
    
