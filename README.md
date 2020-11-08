@@ -35,7 +35,8 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
    ```
    ```sh
       cd NLP_MeTaxa
-      mkdir {input,output} # the input folder, contains fasta files
+      mkdir input # the input folder, contains fasta files
+      mkdir output # the output folder
       python3 get_Taxa.pyt $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
    ```
    
@@ -58,8 +59,15 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
 
       docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t padriba/nlp_metaxa python3 /src/vectorisation.py
    ```
+   ```sh
+      cd NLP_MeTaxa
+      mkdir input # the input folder, contains fasta files
+      mkdir output # the output folder
+      python3 vectorisation.py
+   ```
+   
    The fasta files in the input directory must respect the following naming policy : Taxonomy_id.****.fna(fasta).
-   This is because the vectorization result is going to be used to train the model, and we need labeled data to that
+   This is because the vectorization result is going to be used to train the model, and we need labeled data.
 
    
    
