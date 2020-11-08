@@ -5,7 +5,7 @@ import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
 import re
 import numpy as np
-from dna2vec.dna2vec.multi_k_model import MultiKModel
+from embedding.dna2vec.multi_k_model import MultiKModel
 from ete3 import NCBITaxa
 import csv
 import time
