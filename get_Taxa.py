@@ -1,6 +1,5 @@
 import sys
 import os
-import pandas as pd
 from Bio import SeqIO
 import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
@@ -19,7 +18,7 @@ draw_tree = sys.argv[1]
 def get_Taxonomy_IDs(y_results):
     taxonomy_ids = []
     dicti_ = {}
-    with open('mapping_reseq_mean_all.csv') as file:
+    with open('MLP/mapping_reseq_mean_all') as file:
        reader = csv.reader(file)
        for row in reader:
          dicti_[int(row[1])] = int(row[0]) 
@@ -47,7 +46,7 @@ os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
 file = 'model_220.h5'
 model = tf.keras.models.load_model(file,custom_objects={'precision':precision,'recall':recall})
 
-mk_model = MultiKModel('dna2vec_1-8_all.w2v')
+mk_model = MultiKModel('embedding/dna2vec_1-8_all.w2v')
 ncbi = NCBITaxa()
 
 
@@ -83,7 +82,8 @@ for file in files:
            sumvect = sumvect/word_co
            #predection
            X = np.array([sumvect])
-           y_results = model.predict_classes(X)
+           y_results = np.argmax(model.predict(X),axis=-1)
+           #y_results = model.predict_classes(X)
            #y_results = encoder.inverse_transform(y_results)
             
            y_results = get_Taxonomy_IDs(y_results)
