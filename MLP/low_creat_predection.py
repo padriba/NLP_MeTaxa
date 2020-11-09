@@ -51,7 +51,7 @@ y_pred = model.predict_classes(X_val)
 ncbi = NCBITaxa()
 
 
-with open('mapping_reseq_mean_all') as file:
+with open('MLP/mapping_reseq_mean_all') as file:
      reader = csv.reader(file)
      taxa_dict = {rows[1]:rows[0] for rows in reader}
 
