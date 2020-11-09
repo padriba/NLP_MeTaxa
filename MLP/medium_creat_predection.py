@@ -28,24 +28,9 @@ def recall(y_true, y_pred):
 
 
 
-#dataset_val = pd.read_csv('/bettik/matouguib/cami/fasta/results/metagenomics_signatures_1-8_CAMI_HIGH_mean/metagenomics_signatures_1-8_CAMI_HIGH_mean.csv')
-dataset_val = pd.read_csv('metagenomics_signatures_1-8_CAMI_MED_mean_1123232.csv')
-#dataset_val = pd.read_csv('/bettik/matouguib/cami/fasta/results/metagenomics_signatures_1-8_CAMI_low_mean/metagenomics_signatures_1-8_CAMI_low_mean.csv')
 
+dataset_val = pd.read_csv('MLP/metagenomics_signatures_1-8_CAMI_MED_mean_1123232.csv')
 
-
-#dataset = pd.read_csv('/bettik/matouguib/vectorisation_results/new/reseq_mean_all/reseq_mean_all_l.csv')
-
-#dataset_val = pd.read_csv('/bettik/matouguib/cami/fasta/results/metagenomics_signatures_1-8_CAMI_low_mean/output.csv')
-#dataset_val = pd.read_csv('/bettik/matouguib/cami/fasta/results/metagenomics_signatures_1-8_CAMI_MED_mean/output.csv')
-#dataset_val = pd.read_csv('/bettik/matouguib/cami/fasta/results/metagenomics_signatures_1-8_CAMI_HIGH_mean/output.csv')
-
-
-#encoder = LabelEncoder()
-
-#y = dataset.iloc[:,0].values
-#all_labels = np.unique(y)
-#encoder.fit(y)
 
 
 X_val = dataset_val.iloc[:,1:101].values
@@ -61,12 +46,12 @@ print(file)
 #model = tf.keras.models.load_model(file)
 model = tf.keras.models.load_model(file,custom_objects={'precision':precision,'recall':recall})
 #scores= model.evaluate(X_val,y_val,verbose=1)
-y_pred = model.predict_classes(X_val)
+y_pred = np.argmax(model.predict(X_val),axis=-1)
 
 ncbi = NCBITaxa()
 
 
-with open('mapping_reseq_mean_all') as file:
+with open('MLP/mapping_reseq_mean_all') as file:
      reader = csv.reader(file)
      taxa_dict = {rows[1]:rows[0] for rows in reader}
 
