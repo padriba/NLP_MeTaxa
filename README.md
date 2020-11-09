@@ -120,26 +120,29 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
   - To asses NLP-MeTaxa performance across the different NCBI taxonomic ranks 
     *  First we need to creat a prediction file for the three datasets:
        ```sh
-          python ./MLP/low_creat_predection.py
-          python ./MLP/medium_creat_predection.py
-          python ./MLP/high_creat_predection.py
+          cd NLP_MeTaxa
+          python3 ./MLP/low_creat_predection.py
+          python3 ./MLP/medium_creat_predection.py
+          python3 ./MLP/high_creat_predection.py
         ```
        A file named fcl_$level$_prediction.txt will be found in ./MLP/
        
     * Then we creat a refrecence file from the CAMI dataset across the three different level
     
         ```sh
-          python ./MLP/low_creat_ref.py
-          python ./MLP/medium_creat_ref.py
-          python ./MLP/high_creat_ref.py
+          cd NLP_MeTaxa
+          python3 ./MLP/low_creat_ref.py
+          python3 ./MLP/medium_creat_ref.py
+          python3 ./MLP/high_creat_ref.py
         ```
         
         A file named reference_$level$.txt will be found in ./MLP/
         
      * Finally, launch the metrics for the three datasets, the taxonomic rank (superkingdom, phylum, class, order, family, genus, species) we want to measure is passed as parameter.
         ```sh
-          python ./MLP/low_metrics.py species
-          python ./MLP/medium_metrics.py genus
-          python ./MLP/high_metrics.py superkingdom
+          cd NLP_MeTaxa
+          python3 ./MLP/low_metrics.py species
+          python3 ./MLP/medium_metrics.py genus
+          python3 ./MLP/high_metrics.py superkingdom
         ```
      
