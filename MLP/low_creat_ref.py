@@ -16,7 +16,7 @@ y = dataset.iloc[:, 0].values
 #     mydict = {rows[0]:rows[1] for rows in reader}
 
 print(len(y))
-fileoutput = open('reference_low.txt','w+')
+fileoutput = open('MLP/reference_low.txt','w+')
 for i in range(len(y)):
     lineage = ncbi.get_lineage(y[i])
     result=[ncbi.get_rank([taxid]) for taxid in lineage]
