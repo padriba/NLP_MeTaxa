@@ -12,7 +12,7 @@ import sys
 y_true = []
 y_pred = []
 
-with open('reference_low.txt','r') as f, open('fcl_low_prediction.txt','r') as f2:
+with open('MLP/reference_low.txt','r') as f, open('MLP/fcl_low_prediction.txt','r') as f2:
    
     for line,line2 in zip(f,f2):
         vect = line.replace('[','')
