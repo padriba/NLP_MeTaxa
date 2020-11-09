@@ -46,7 +46,8 @@ print(file)
 #model = tf.keras.models.load_model(file)
 model = tf.keras.models.load_model(file,custom_objects={'precision':precision,'recall':recall})
 #scores= model.evaluate(X_val,y_val,verbose=1)
-y_pred = model.predict_classes(X_val)
+#y_pred = model.predict_classes(X_val)
+y_pred = np.argmax(model.predict(X_val),axis=-1)
 
 ncbi = NCBITaxa()
 
