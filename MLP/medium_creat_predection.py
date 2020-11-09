@@ -57,7 +57,7 @@ with open('MLP/mapping_reseq_mean_all') as file:
 
 print(len(y_pred))
 
-fileoutput = open('fcl_medium_prediction.txt','w+')
+fileoutput = open('MLP/fcl_medium_prediction.txt','w+')
 for i in range(len(y_pred)):
       lineage = ncbi.get_lineage(int(taxa_dict[str(y_pred[i])]))
       result=[ncbi.get_rank([taxid]) for taxid in lineage]
