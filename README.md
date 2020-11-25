@@ -21,7 +21,7 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
      docker pull padriba/nlp_metaxa:latest
    ```
    In the following, you find two commands, one for NLP_MeTaxa docker image and the other if you install NLP_MeTaxa from source.
-   ## Taxonomic assignment
+# Taxonomic assignment
    
    To launch NLP-MeTaxa
    ```sh
@@ -50,7 +50,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
       
    If the user chooses to print the NCBI taxnomy tree, NLP-MeTaxa will create for each fasta file a taxonomy tree
      
-  ## NLP Vectorization
+# NLP Vectorization
   To get a word2vec embedding representation :
    
   ```sh
@@ -74,7 +74,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
    
       
      
-  ## Training a new MLP model
+# Training a new MLP model
    - To train a new MPL model
     
        ```sh
@@ -115,7 +115,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
      ```
      
 
-  ## Metrics by rank
+# Metrics by rank
   
   - To asses NLP-MeTaxa performance across the different NCBI taxonomic ranks 
     *  First we need to creat a prediction file for the three datasets:
