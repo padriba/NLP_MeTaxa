@@ -13,8 +13,9 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
    ## Building from source
    1- Clone the ```NLP-MeTaxa``` repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git``` \
    2- The required python version is ```3.8.6``` \
-   3- Install the following python packages: \ 
-   ```pip3 install arrow==0.8.0
+   3- Install the following python packages:     \ 
+   ```
+pip3 install arrow==0.8.0
 pip3 install numpy==1.18.5
 pip3 install biopython==1.68
 pip3 install boto==2.46.1
