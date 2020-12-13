@@ -44,9 +44,9 @@ with open('MLP/reference_high.txt','r') as f, open('MLP/fcl_high_prediction.txt'
                  y_pred.append(0)
 
 label = np.unique(y_true)
-print(y_true)
-print(y_pred)
-print(sys.argv[1])
+#print(y_true)
+#print(y_pred)
+#print(sys.argv[1])
 
 #print(label)
 recall=recall_score(y_true, y_pred,label, average='macro')
