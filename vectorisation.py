@@ -3,11 +3,11 @@ import os
 from Bio import SeqIO
 import random
 import sys
-from embedding.dna2vec.multi_k_model import MultiKModel
 import numpy as np
 import re
 import datetime
-
+import gensim
+from gensim.models import word2vec
 
 
 
@@ -35,7 +35,8 @@ for filename in files:
 
 outputfile = os.path.join('output','vectorisation_results.csv')
 
-mk_model = MultiKModel('embedding/dna2vec_1-8_all.w2v')
+mk_model = gensim.models.KeyedVectors.load_word2vec_format('embedding/dna2vec_1-8_all.w2v', binary=False)
+#mk_model = MultiKModel('embedding/dna2vec_1-8_all.w2v')
 
 
 
@@ -87,7 +88,7 @@ for file in files:
               for i in range(0, len(sequence_segment)-8+1, step):
                  v = vectorized.get(sequence_segment[i:i+kmer],None)
                  if v is None:
-                    v= mk_model.vector(sequence_segment[i: i + kmer])
+                    v= mk_model[sequence_segment[i: i + kmer]]
                     vectorized[sequence_segment[i:i+kmer]] = v
                  sumvect = np.sum([sumvect,v],axis=0)
                  word_co += 1
@@ -121,7 +122,7 @@ for file in files:
               for i in range(0, len(sequence_segment)-8+1, step):
                  v = vectorized.get(sequence_segment[i:i+kmer],None)
                  if v is None:
-                    v= mk_model.vector(sequence_segment[i: i + kmer])
+                    v= mk_model[sequence_segment[i: i + kmer]]
                     vectorized[sequence_segment[i:i+kmer]] = v
                  sumvect = np.sum([sumvect,v],axis=0)
                  word_co += 1
