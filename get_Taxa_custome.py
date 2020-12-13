@@ -6,10 +6,11 @@ import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
 import re
 import numpy as np
-from embedding.dna2vec.multi_k_model import MultiKModel
 from ete3 import NCBITaxa
 import csv
 import time
+import gensim
+from gensim.models import word2vec
 
 
 start_time = time.time()
@@ -47,7 +48,8 @@ os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
 file = 'model.h5'
 model = tf.keras.models.load_model(file,custom_objects={'precision':precision,'recall':recall})
 
-mk_model = MultiKModel('embedding/dna2vec_1-8_all.w2v')
+mk_model = gensim.models.KeyedVectors.load_word2vec_format('embedding/dna2vec_1-8_all.w2v', binary=False)
+#mk_model = MultiKModel('embedding/dna2vec_1-8_all.w2v')
 ncbi = NCBITaxa()
 
 
@@ -78,7 +80,7 @@ for file in files:
            step = 1
            word_co = 0
            for i in range(0, len(full_sequence)-8+1, step):
-                 sumvect = np.sum([sumvect,mk_model.vector(full_sequence[i: i + kmer])],axis=0)
+                 sumvect = np.sum([sumvect,mk_model[full_sequence[i: i + kmer]]],axis=0)
                  word_co += 1
            sumvect = sumvect/word_co
            #predection
