@@ -1,5 +1,7 @@
 This is a toy example of using NLP_MeTaxa
 
+#launching a docker image
+
 - Pull the docker image
 ```
   docker pull padriba/nlp_metaxa:latest
@@ -18,3 +20,6 @@ This is a toy example of using NLP_MeTaxa
     sudo docker run -v ~/input/:/src/input -v ~/output/:/src/output -t padriba/nlp_metaxa python3 /src/get_Taxa.py 0
   ```
   The output folder ```output``` will contain a file named ```example_taxa.tsv```
+  
+  # launching NLP-MeTaxa from source
+  
