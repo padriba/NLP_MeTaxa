@@ -15,30 +15,11 @@ The following videos show the main functions given by NLP-MeTaxa, tested in Wind
    2- The required python version is ```3.8.6``` \
    3- Install the following python packages (to avoid packages conflicts, I would recommend using Virtual Environments.):  
    ```
-pip3 install arrow==0.8.0
+pip3 install tensorflow==2.3.1
 pip3 install numpy==1.18.5
 pip3 install biopython==1.68
-pip3 install boto==2.46.1
-pip3 install bz2file==0.98
-pip3 install ConfigArgParse==0.11.0
 pip3 install gensim==3.8.3
-pip3 install Logbook==1.5.3
-pip3 install pep8==1.7.0
-pip3 install pluggy==0.4.0
-pip3 install py==1.4.33
-pip3 install pytest==3.0.7
-pip3 install python-dateutil==2.6.0
-pip3 install requests==2.13.0
-pip3 install scipy==1.5.4
-pip3 install six
-pip3 install smart-open==3.0.0
-pip3 install tox==2.7.0
-pip3 install tox-pyenv==1.0.3
-pip3 install virtualenv==15.1.0
-pip3 install tensorflow==2.3.1
-pip3 install scikit-learn==0.23.2
 pip3 install ete3
-pip3 install pandas
 
 ```
    ## Docker image
