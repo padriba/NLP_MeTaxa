@@ -25,7 +25,7 @@ This is a toy example of using NLP_MeTaxa
   
   Clone the ```NLP-MeTaxa``` repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git``` \
   
-  - Download in your home folder the fasta file from this  [link](https://dl.dropbox.com/s/yfkrlns8qw9n788/example.fasta?dl=1)
+  Download in your home folder the fasta file from this  [link](https://dl.dropbox.com/s/yfkrlns8qw9n788/example.fasta?dl=1)
   
   ```sh
       cd NLP_MeTaxa
