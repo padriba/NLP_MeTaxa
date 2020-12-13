@@ -23,3 +23,11 @@ This is a toy example of using NLP_MeTaxa
   
   # launching NLP-MeTaxa from source
   
+  ```sh
+      cd NLP_MeTaxa
+      mkdir input # the input folder, contains fasta files
+      mkdir output # the output folder
+      cp 
+      python3 get_Taxa.py $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
+  ```
+  
