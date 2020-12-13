@@ -1,6 +1,6 @@
 This is a toy example of using NLP_MeTaxa
 
-#launching a docker image
+# launching a docker image
 
 - Pull the docker image
 ```
