@@ -1,7 +1,0 @@
-inputs: inputs/nseq/*
-k-low: 1
-k-high: 8
-vec-dim: 100
-epoch: 100
-context: 10
-out-dir: results/

@@ -1,7 +1,0 @@
-inputs: inputs/hg38_low/hg38/*
-k-low: 1
-k-high: 15
-vec-dim: 100
-epoch: 8
-context: 10
-out-dir: results/
