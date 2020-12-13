@@ -70,6 +70,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
    ```sh
       cd NLP_MeTaxa
       mkdir input # the input folder, contains fasta files
+      cp embedding/input/* input/
       mkdir output # the output folder
       python3 vectorisation.py
    ```
