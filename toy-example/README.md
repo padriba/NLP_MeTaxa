@@ -6,7 +6,7 @@ This is a toy example of using NLP_MeTaxa
 ```
   docker pull padriba/nlp_metaxa:latest
 ```
-- Downolad the fasta file from this  [link](https://dl.dropbox.com/s/yfkrlns8qw9n788/example.fasta?dl=1)
+- Download the fasta file from this  [link](https://dl.dropbox.com/s/yfkrlns8qw9n788/example.fasta?dl=1)
 - Create an ```input``` and ```output``` folders in your home directory, and copy ```example.fasta``` in the ```input``` folder
 
 - To get both the taxonomic assignment and print the  NCBI Taxonomy Tree run the following command: 
@@ -23,11 +23,15 @@ This is a toy example of using NLP_MeTaxa
   
   # launching NLP-MeTaxa from source
   
+  Clone the ```NLP-MeTaxa``` repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git``` \
+  
+  - Download in your home folder the fasta file from this  [link](https://dl.dropbox.com/s/yfkrlns8qw9n788/example.fasta?dl=1)
+  
   ```sh
       cd NLP_MeTaxa
       mkdir input # the input folder, contains fasta files
       mkdir output # the output folder
-      cp 
+      cp ~/example.fasta input/
       python3 get_Taxa.py $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
   ```
   
