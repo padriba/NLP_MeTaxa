@@ -23,7 +23,7 @@ This is a toy example of using NLP_MeTaxa
   
   # launching NLP-MeTaxa from source
   
-  Clone the ```NLP-MeTaxa``` repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git``` \
+  Clone the ```NLP-MeTaxa``` repository: ```git clone https://github.com/padriba/NLP_MeTaxa.git``` 
   
   Download in your home folder the fasta file from this  [link](https://dl.dropbox.com/s/yfkrlns8qw9n788/example.fasta?dl=1)
   
