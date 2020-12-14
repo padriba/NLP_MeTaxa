@@ -45,7 +45,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
       cd NLP_MeTaxa
       mkdir input # the input folder, contains fasta files
       mkdir output # the output folder
-      cp embedding/toy-input/* input/ #copy in input folder the fasta files we want to know to classify
+      cp embedding/toy-input/* input/ #copy in input folder the fasta files we want to classify
       python3 get_Taxa.py $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
    ```
    
@@ -120,7 +120,7 @@ docker run -v $(/input/folder/):/src/input -v $(/output/folder/):/src/output -t 
          cd NLP_MeTaxa
          mv input/vectorisation_results.csv .
          mv output/model.h5 .
-         cp embedding/toy-input/* input/ #copy in input folder the fasta files we want to know to classify
+         cp embedding/toy-input/* input/ #copy in input folder the fasta files we want to classify
          python3 get_Taxa_custome.py $(print_tree) # print_tree : Print the NCBI taxnomy tree, 0 : dont print, 1 : print it
      ```
      
